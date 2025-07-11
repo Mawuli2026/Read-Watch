@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="This Application is for Readers of Article and Moving Lovers">
+    <meta name="author" content="Mawuli Ayikpa">
+    <meta property="og:title" content="Read And Watch  - Homepage" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This app suggests a book and movie pairing based on genre or keyword input. Perfect for book lovers and movie fans">
+    <meta property="og:image" content="https://github.com/mawuli44/wdd231/blob/main/chamber/images/hero.webp"/>
+    <meta property="og:url" content="https://mawuli44.github.io/wdd231/chamber/index.html" />
+  <title>Read & Watch</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 Read & 🎬 Watch</h1>
+      <p>Themed Entertainment Pairings Generator</p>
+    </header>
+
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Enter a genre or keyword..." />
+      <button id="searchButton">Search</button>
+    </section>
+
+    <section id="results" class="results-section">
+      <div class="result-card" id="bookResult">
+        <h2>📖 Book Suggestion</h2>
+        <div class="content">
+          <!-- Book content inserted by JS -->
+        </div>
+      </div>
+
+      <div class="result-card" id="movieResult">
+        <h2>🎬 Movie Suggestion</h2>
+        <div class="content">
+          <!-- Movie content inserted by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="save-section">
+      <button id="saveComboBtn">💾 Save Combo</button>
+    </section>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
